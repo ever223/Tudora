@@ -1,0 +1,516 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		431B600A1BD282E100F75ED9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 431B60091BD282E100F75ED9 /* AppDelegate.swift */; };
+		431B600C1BD282E100F75ED9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 431B600B1BD282E100F75ED9 /* ViewController.swift */; };
+		431B600F1BD282E100F75ED9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 431B600D1BD282E100F75ED9 /* Main.storyboard */; };
+		431B60111BD282E100F75ED9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 431B60101BD282E100F75ED9 /* Assets.xcassets */; };
+		431B60141BD282E100F75ED9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 431B60121BD282E100F75ED9 /* LaunchScreen.storyboard */; };
+		431B601F1BD282E100F75ED9 /* TudoraTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 431B601E1BD282E100F75ED9 /* TudoraTests.swift */; };
+		431B602A1BD282E100F75ED9 /* TudoraUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 431B60291BD282E100F75ED9 /* TudoraUITests.swift */; };
+		43DF32801BDA768B00A54A16 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 43DF327F1BDA768B00A54A16 /* .gitignore */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		431B601B1BD282E100F75ED9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 431B5FFE1BD282E100F75ED9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 431B60051BD282E100F75ED9;
+			remoteInfo = Tudora;
+		};
+		431B60261BD282E100F75ED9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 431B5FFE1BD282E100F75ED9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 431B60051BD282E100F75ED9;
+			remoteInfo = Tudora;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		431B60061BD282E100F75ED9 /* Tudora.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tudora.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		431B60091BD282E100F75ED9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		431B600B1BD282E100F75ED9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		431B600E1BD282E100F75ED9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		431B60101BD282E100F75ED9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		431B60131BD282E100F75ED9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		431B60151BD282E100F75ED9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		431B601A1BD282E100F75ED9 /* TudoraTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TudoraTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		431B601E1BD282E100F75ED9 /* TudoraTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TudoraTests.swift; sourceTree = "<group>"; };
+		431B60201BD282E100F75ED9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		431B60251BD282E100F75ED9 /* TudoraUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TudoraUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		431B60291BD282E100F75ED9 /* TudoraUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TudoraUITests.swift; sourceTree = "<group>"; };
+		431B602B1BD282E100F75ED9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		43DF327F1BDA768B00A54A16 /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		431B60031BD282E100F75ED9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		431B60171BD282E100F75ED9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		431B60221BD282E100F75ED9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		431B5FFD1BD282E100F75ED9 = {
+			isa = PBXGroup;
+			children = (
+				43DF327F1BDA768B00A54A16 /* .gitignore */,
+				431B60081BD282E100F75ED9 /* Tudora */,
+				431B601D1BD282E100F75ED9 /* TudoraTests */,
+				431B60281BD282E100F75ED9 /* TudoraUITests */,
+				431B60071BD282E100F75ED9 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		431B60071BD282E100F75ED9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				431B60061BD282E100F75ED9 /* Tudora.app */,
+				431B601A1BD282E100F75ED9 /* TudoraTests.xctest */,
+				431B60251BD282E100F75ED9 /* TudoraUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		431B60081BD282E100F75ED9 /* Tudora */ = {
+			isa = PBXGroup;
+			children = (
+				431B60091BD282E100F75ED9 /* AppDelegate.swift */,
+				431B600B1BD282E100F75ED9 /* ViewController.swift */,
+				431B600D1BD282E100F75ED9 /* Main.storyboard */,
+				431B60101BD282E100F75ED9 /* Assets.xcassets */,
+				431B60121BD282E100F75ED9 /* LaunchScreen.storyboard */,
+				431B60151BD282E100F75ED9 /* Info.plist */,
+			);
+			path = Tudora;
+			sourceTree = "<group>";
+		};
+		431B601D1BD282E100F75ED9 /* TudoraTests */ = {
+			isa = PBXGroup;
+			children = (
+				431B601E1BD282E100F75ED9 /* TudoraTests.swift */,
+				431B60201BD282E100F75ED9 /* Info.plist */,
+			);
+			path = TudoraTests;
+			sourceTree = "<group>";
+		};
+		431B60281BD282E100F75ED9 /* TudoraUITests */ = {
+			isa = PBXGroup;
+			children = (
+				431B60291BD282E100F75ED9 /* TudoraUITests.swift */,
+				431B602B1BD282E100F75ED9 /* Info.plist */,
+			);
+			path = TudoraUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		431B60051BD282E100F75ED9 /* Tudora */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 431B602E1BD282E100F75ED9 /* Build configuration list for PBXNativeTarget "Tudora" */;
+			buildPhases = (
+				431B60021BD282E100F75ED9 /* Sources */,
+				431B60031BD282E100F75ED9 /* Frameworks */,
+				431B60041BD282E100F75ED9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Tudora;
+			productName = Tudora;
+			productReference = 431B60061BD282E100F75ED9 /* Tudora.app */;
+			productType = "com.apple.product-type.application";
+		};
+		431B60191BD282E100F75ED9 /* TudoraTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 431B60311BD282E100F75ED9 /* Build configuration list for PBXNativeTarget "TudoraTests" */;
+			buildPhases = (
+				431B60161BD282E100F75ED9 /* Sources */,
+				431B60171BD282E100F75ED9 /* Frameworks */,
+				431B60181BD282E100F75ED9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				431B601C1BD282E100F75ED9 /* PBXTargetDependency */,
+			);
+			name = TudoraTests;
+			productName = TudoraTests;
+			productReference = 431B601A1BD282E100F75ED9 /* TudoraTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		431B60241BD282E100F75ED9 /* TudoraUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 431B60341BD282E100F75ED9 /* Build configuration list for PBXNativeTarget "TudoraUITests" */;
+			buildPhases = (
+				431B60211BD282E100F75ED9 /* Sources */,
+				431B60221BD282E100F75ED9 /* Frameworks */,
+				431B60231BD282E100F75ED9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				431B60271BD282E100F75ED9 /* PBXTargetDependency */,
+			);
+			name = TudoraUITests;
+			productName = TudoraUITests;
+			productReference = 431B60251BD282E100F75ED9 /* TudoraUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		431B5FFE1BD282E100F75ED9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = xiaoo_gan;
+				TargetAttributes = {
+					431B60051BD282E100F75ED9 = {
+						CreatedOnToolsVersion = 7.0.1;
+						DevelopmentTeam = 5G7QC32P3B;
+					};
+					431B60191BD282E100F75ED9 = {
+						CreatedOnToolsVersion = 7.0.1;
+						DevelopmentTeam = 5G7QC32P3B;
+						TestTargetID = 431B60051BD282E100F75ED9;
+					};
+					431B60241BD282E100F75ED9 = {
+						CreatedOnToolsVersion = 7.0.1;
+						DevelopmentTeam = 5G7QC32P3B;
+						TestTargetID = 431B60051BD282E100F75ED9;
+					};
+				};
+			};
+			buildConfigurationList = 431B60011BD282E100F75ED9 /* Build configuration list for PBXProject "Tudora" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 431B5FFD1BD282E100F75ED9;
+			productRefGroup = 431B60071BD282E100F75ED9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				431B60051BD282E100F75ED9 /* Tudora */,
+				431B60191BD282E100F75ED9 /* TudoraTests */,
+				431B60241BD282E100F75ED9 /* TudoraUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		431B60041BD282E100F75ED9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				43DF32801BDA768B00A54A16 /* .gitignore in Resources */,
+				431B60141BD282E100F75ED9 /* LaunchScreen.storyboard in Resources */,
+				431B60111BD282E100F75ED9 /* Assets.xcassets in Resources */,
+				431B600F1BD282E100F75ED9 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		431B60181BD282E100F75ED9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		431B60231BD282E100F75ED9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		431B60021BD282E100F75ED9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				431B600C1BD282E100F75ED9 /* ViewController.swift in Sources */,
+				431B600A1BD282E100F75ED9 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		431B60161BD282E100F75ED9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				431B601F1BD282E100F75ED9 /* TudoraTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		431B60211BD282E100F75ED9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				431B602A1BD282E100F75ED9 /* TudoraUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		431B601C1BD282E100F75ED9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 431B60051BD282E100F75ED9 /* Tudora */;
+			targetProxy = 431B601B1BD282E100F75ED9 /* PBXContainerItemProxy */;
+		};
+		431B60271BD282E100F75ED9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 431B60051BD282E100F75ED9 /* Tudora */;
+			targetProxy = 431B60261BD282E100F75ED9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		431B600D1BD282E100F75ED9 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				431B600E1BD282E100F75ED9 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		431B60121BD282E100F75ED9 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				431B60131BD282E100F75ED9 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		431B602C1BD282E100F75ED9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		431B602D1BD282E100F75ED9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		431B602F1BD282E100F75ED9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Tudora/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ever223.Tudora;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		431B60301BD282E100F75ED9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Tudora/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ever223.Tudora;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		431B60321BD282E100F75ED9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = TudoraTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ever223.TudoraTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Tudora.app/Tudora";
+			};
+			name = Debug;
+		};
+		431B60331BD282E100F75ED9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = TudoraTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ever223.TudoraTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Tudora.app/Tudora";
+			};
+			name = Release;
+		};
+		431B60351BD282E100F75ED9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = TudoraUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ever223.TudoraUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Tudora;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		431B60361BD282E100F75ED9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = TudoraUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ever223.TudoraUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Tudora;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		431B60011BD282E100F75ED9 /* Build configuration list for PBXProject "Tudora" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				431B602C1BD282E100F75ED9 /* Debug */,
+				431B602D1BD282E100F75ED9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		431B602E1BD282E100F75ED9 /* Build configuration list for PBXNativeTarget "Tudora" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				431B602F1BD282E100F75ED9 /* Debug */,
+				431B60301BD282E100F75ED9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		431B60311BD282E100F75ED9 /* Build configuration list for PBXNativeTarget "TudoraTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				431B60321BD282E100F75ED9 /* Debug */,
+				431B60331BD282E100F75ED9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		431B60341BD282E100F75ED9 /* Build configuration list for PBXNativeTarget "TudoraUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				431B60351BD282E100F75ED9 /* Debug */,
+				431B60361BD282E100F75ED9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 431B5FFE1BD282E100F75ED9 /* Project object */;
+}
