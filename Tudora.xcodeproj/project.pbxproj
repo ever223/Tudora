@@ -14,6 +14,7 @@
 		431B60141BD282E100F75ED9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 431B60121BD282E100F75ED9 /* LaunchScreen.storyboard */; };
 		431B601F1BD282E100F75ED9 /* TudoraTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 431B601E1BD282E100F75ED9 /* TudoraTests.swift */; };
 		431B602A1BD282E100F75ED9 /* TudoraUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 431B60291BD282E100F75ED9 /* TudoraUITests.swift */; };
+		4371E48C1BDBD1010026E81C /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4371E48B1BDBD1010026E81C /* AboutViewController.swift */; };
 		43DF32801BDA768B00A54A16 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 43DF327F1BDA768B00A54A16 /* .gitignore */; };
 /* End PBXBuildFile section */
 
@@ -48,6 +49,7 @@
 		431B60251BD282E100F75ED9 /* TudoraUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TudoraUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		431B60291BD282E100F75ED9 /* TudoraUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TudoraUITests.swift; sourceTree = "<group>"; };
 		431B602B1BD282E100F75ED9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4371E48B1BDBD1010026E81C /* AboutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
 		43DF327F1BDA768B00A54A16 /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -103,6 +105,7 @@
 				431B60091BD282E100F75ED9 /* AppDelegate.swift */,
 				431B600B1BD282E100F75ED9 /* ViewController.swift */,
 				431B600D1BD282E100F75ED9 /* Main.storyboard */,
+				4371E48B1BDBD1010026E81C /* AboutViewController.swift */,
 				431B60101BD282E100F75ED9 /* Assets.xcassets */,
 				431B60121BD282E100F75ED9 /* LaunchScreen.storyboard */,
 				431B60151BD282E100F75ED9 /* Info.plist */,
@@ -262,6 +265,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4371E48C1BDBD1010026E81C /* AboutViewController.swift in Sources */,
 				431B600C1BD282E100F75ED9 /* ViewController.swift in Sources */,
 				431B600A1BD282E100F75ED9 /* AppDelegate.swift in Sources */,
 			);
