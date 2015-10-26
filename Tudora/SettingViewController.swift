@@ -21,8 +21,8 @@ class SettingViewController: UIViewController {
     @IBOutlet weak var pickerView: UIPickerView!
     @IBOutlet weak var workDurationValueLabel: UILabel!
     @IBOutlet weak var breakDurationValueLabel: UILabel!
-
-    let userDefault = NSUserDefaults.standardUserDefaults()
+    @IBOutlet var workTapGestrueRecongnizer: UITapGestureRecognizer!
+    @IBOutlet var breakTapGestrueRecongnizer: UITapGestureRecognizer!
     private let markerView = UIView()
     
     let workTimes = [10, 15, 20, 25, 30, 35, 40, 45, 50, 55]
@@ -32,6 +32,7 @@ class SettingViewController: UIViewController {
     private var currentWorkDuration = NSUserDefaults.standardUserDefaults().integerForKey(TimerType.Work.rawValue) / 60
     private var currentBreakDuration = NSUserDefaults.standardUserDefaults().integerForKey(TimerType.Break.rawValue) / 60
     
+    //MARK: View life cycle
     override func preferredStatusBarStyle() -> UIStatusBarStyle {
         return .LightContent
     }
@@ -74,19 +75,11 @@ class SettingViewController: UIViewController {
 
         pickerView.dataSource = self
         pickerView.delegate = self
-        
-        let workgestureRecongnizer = UITapGestureRecognizer(target: self, action: "moveMarker:")
-        workView.addGestureRecognizer(workgestureRecongnizer)
-        
-        let breakgestureRecongnizer = UITapGestureRecognizer(target: self, action: "moveMarker:")
-        breakView.addGestureRecognizer(breakgestureRecongnizer)
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+        workView.addGestureRecognizer(workTapGestrueRecongnizer)
+        breakView.addGestureRecognizer(breakTapGestrueRecongnizer)
     }
     
+    //MARK: Helpers
     func setDurationString(s: String) {
         switch selectedTimerType {
         case .Work:
@@ -112,7 +105,9 @@ class SettingViewController: UIViewController {
             self.markerView.frame = CGRectInset(view.frame, -3, -3)
             }, completion: nil)
     }
-    func moveMarker(sender: UITapGestureRecognizer) {
+    
+    //MARK : IBAction
+    @IBAction func MoveMarker(sender: UITapGestureRecognizer) {
         moveMarkerToView(sender.view!)
         pickerView.reloadAllComponents()
         
@@ -141,6 +136,8 @@ class SettingViewController: UIViewController {
         dismissViewControllerAnimated(true, completion: nil)
     }
 }
+
+// MARK: UIPickerViewDataSource, UIPickerViewDelegate
 extension SettingViewController: UIPickerViewDataSource, UIPickerViewDelegate {
     func numberOfComponentsInPickerView(pickerView: UIPickerView) -> Int {
         return 1
@@ -181,5 +178,4 @@ extension SettingViewController: UIPickerViewDataSource, UIPickerViewDelegate {
         NSUserDefaults.standardUserDefaults().setInteger(seconds, forKey: timerType.rawValue)
         NSUserDefaults.standardUserDefaults().synchronize()
     }
-    
 }

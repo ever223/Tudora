@@ -146,19 +146,8 @@
                                     <segue destination="kGW-Ep-20m" kind="show" id="qLm-F4-7so"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a0D-b6-R6h">
-                                <rect key="frame" x="170" y="475" width="80" height="80"/>
-                                <animations/>
-                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
-                                <state key="normal" title="休息">
-                                    <color key="titleColor" red="1" green="1" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                                <connections>
-                                    <action selector="pressedBreakButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="isT-aY-pep"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r23-OJ-1H4">
-                                <rect key="frame" x="350" y="475" width="80" height="80"/>
+                                <rect key="frame" x="350" y="490" width="80" height="80"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                 <state key="normal" title="工作">
@@ -168,11 +157,11 @@
                                     <action selector="pressedWorkButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="MgJ-oT-Ixd"/>
                                 </connections>
                             </button>
-                            <view contentMode="scaleToFill" horizontalCompressionResistancePriority="751" restorationIdentifier="timerView" translatesAutoresizingMaskIntoConstraints="NO" id="NOY-Wc-el6" userLabel="TimerView">
-                                <rect key="frame" x="175" y="125" width="250" height="250"/>
+                            <view contentMode="scaleToFill" restorationIdentifier="timerView" translatesAutoresizingMaskIntoConstraints="NO" id="NOY-Wc-el6" userLabel="TimerView">
+                                <rect key="frame" x="80" y="30" width="440" height="440"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VYE-D2-4CW">
-                                        <rect key="frame" x="31" y="77.5" width="188.5" height="95.5"/>
+                                        <rect key="frame" x="126" y="172" width="188.5" height="95.5"/>
                                         <animations/>
                                         <fontDescription key="fontDescription" type="system" pointSize="80"/>
                                         <color key="textColor" red="1" green="1" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -182,14 +171,13 @@
                                 <animations/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstItem="VYE-D2-4CW" firstAttribute="centerY" secondItem="NOY-Wc-el6" secondAttribute="centerY" id="L8A-wb-thG"/>
-                                    <constraint firstAttribute="width" secondItem="NOY-Wc-el6" secondAttribute="height" multiplier="1:1" id="bKP-1q-CjN"/>
-                                    <constraint firstItem="VYE-D2-4CW" firstAttribute="centerX" secondItem="NOY-Wc-el6" secondAttribute="centerX" id="qO6-iq-ztf"/>
-                                    <constraint firstAttribute="width" constant="250" id="tsQ-Ne-uXm"/>
+                                    <constraint firstItem="VYE-D2-4CW" firstAttribute="centerY" secondItem="NOY-Wc-el6" secondAttribute="centerY" id="Lcd-si-Hg0"/>
+                                    <constraint firstItem="VYE-D2-4CW" firstAttribute="centerX" secondItem="NOY-Wc-el6" secondAttribute="centerX" id="qGJ-gC-0Lg"/>
+                                    <constraint firstAttribute="width" secondItem="NOY-Wc-el6" secondAttribute="height" multiplier="1:1" id="sTr-dL-b8n"/>
                                 </constraints>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RnS-8i-YGE">
-                                <rect key="frame" x="260" y="415" width="80" height="80"/>
+                                <rect key="frame" x="260" y="510" width="80" height="80"/>
                                 <animations/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="80" id="HF8-AM-90Y"/>
@@ -203,35 +191,58 @@
                                     <action selector="pressedProcrastinateButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="SuY-UA-vkl"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a0D-b6-R6h">
+                                <rect key="frame" x="170" y="490" width="80" height="80"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <state key="normal" title="休息">
+                                    <color key="titleColor" red="1" green="1" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="pressedBreakButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="isT-aY-pep"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" red="0.0" green="0.59999999999999998" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <color key="tintColor" red="1" green="1" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="ONX-Lq-nbz" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="PbP-Lg-JlJ" secondAttribute="trailing" constant="10" id="0Li-ds-TJi"/>
+                            <constraint firstItem="NOY-Wc-el6" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-50" id="2Fr-Hk-kV0"/>
+                            <constraint firstItem="NOY-Wc-el6" firstAttribute="top" relation="greaterThanOrEqual" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="10" id="4X0-I1-XNv"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="NOY-Wc-el6" secondAttribute="bottom" priority="750" constant="10" id="5lE-Uy-4wu"/>
                             <constraint firstItem="r23-OJ-1H4" firstAttribute="top" secondItem="RnS-8i-YGE" secondAttribute="bottom" constant="-20" id="7DN-pt-8es"/>
-                            <constraint firstItem="NOY-Wc-el6" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-50" id="8bw-1y-QAE"/>
-                            <constraint firstItem="NOY-Wc-el6" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="10" id="9ex-42-fq7"/>
+                            <constraint firstItem="r23-OJ-1H4" firstAttribute="centerY" secondItem="a0D-b6-R6h" secondAttribute="centerY" id="96t-hS-UBi"/>
                             <constraint firstItem="ONX-Lq-nbz" firstAttribute="centerY" secondItem="PbP-Lg-JlJ" secondAttribute="centerY" id="AdI-bg-tDk"/>
-                            <constraint firstItem="RnS-8i-YGE" firstAttribute="leading" secondItem="a0D-b6-R6h" secondAttribute="trailing" constant="10" id="CXD-fw-OMT"/>
-                            <constraint firstItem="r23-OJ-1H4" firstAttribute="width" secondItem="RnS-8i-YGE" secondAttribute="width" id="Dhh-nN-ndp"/>
-                            <constraint firstItem="NOY-Wc-el6" firstAttribute="top" relation="greaterThanOrEqual" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="10" id="HK6-wN-STE"/>
+                            <constraint firstItem="r23-OJ-1H4" firstAttribute="height" secondItem="RnS-8i-YGE" secondAttribute="height" id="Avk-8V-0cj"/>
+                            <constraint firstItem="RnS-8i-YGE" firstAttribute="top" secondItem="NOY-Wc-el6" secondAttribute="bottom" constant="40" id="COR-5k-UkP"/>
+                            <constraint firstItem="RnS-8i-YGE" firstAttribute="top" secondItem="NOY-Wc-el6" secondAttribute="bottom" constant="40" id="Dn1-fP-g2q"/>
+                            <constraint firstItem="NOY-Wc-el6" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="10" id="Gle-gh-V32"/>
                             <constraint firstItem="PbP-Lg-JlJ" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="30" id="Inq-1s-QAD"/>
                             <constraint firstItem="ONX-Lq-nbz" firstAttribute="width" secondItem="PbP-Lg-JlJ" secondAttribute="width" id="Lba-Wm-bdh"/>
-                            <constraint firstItem="a0D-b6-R6h" firstAttribute="centerY" secondItem="r23-OJ-1H4" secondAttribute="centerY" id="NdB-Ro-Ad3"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" relation="greaterThanOrEqual" secondItem="NOY-Wc-el6" secondAttribute="bottom" constant="10" id="QGK-jx-3d6"/>
-                            <constraint firstItem="r23-OJ-1H4" firstAttribute="leading" secondItem="RnS-8i-YGE" secondAttribute="trailing" constant="10" id="QMy-iG-VcN"/>
+                            <constraint firstItem="a0D-b6-R6h" firstAttribute="height" secondItem="RnS-8i-YGE" secondAttribute="height" id="Neh-Tl-bKp"/>
+                            <constraint firstItem="NOY-Wc-el6" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" priority="750" constant="10" id="Nvy-PM-eK4"/>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="NOY-Wc-el6" secondAttribute="trailing" constant="10" id="OtS-FM-sbi"/>
+                            <constraint firstItem="NOY-Wc-el6" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="UaY-Ts-2gQ"/>
+                            <constraint firstItem="NOY-Wc-el6" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" priority="751" constant="10" id="VEE-qz-gwk"/>
+                            <constraint firstItem="r23-OJ-1H4" firstAttribute="leading" secondItem="RnS-8i-YGE" secondAttribute="trailing" constant="10" id="VVp-a2-NSP"/>
+                            <constraint firstItem="r23-OJ-1H4" firstAttribute="width" secondItem="RnS-8i-YGE" secondAttribute="width" id="XV7-yU-OXn"/>
                             <constraint firstItem="RnS-8i-YGE" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="des-9t-4JO"/>
-                            <constraint firstItem="NOY-Wc-el6" firstAttribute="centerX" secondItem="RnS-8i-YGE" secondAttribute="centerX" id="eZI-M5-4Nl"/>
-                            <constraint firstItem="a0D-b6-R6h" firstAttribute="width" secondItem="RnS-8i-YGE" secondAttribute="width" id="fov-AX-L99"/>
+                            <constraint firstItem="a0D-b6-R6h" firstAttribute="width" secondItem="RnS-8i-YGE" secondAttribute="width" id="grR-95-vP1"/>
                             <constraint firstItem="ONX-Lq-nbz" firstAttribute="height" secondItem="PbP-Lg-JlJ" secondAttribute="height" id="h8K-QO-5Tu"/>
-                            <constraint firstAttribute="trailingMargin" relation="greaterThanOrEqual" secondItem="NOY-Wc-el6" secondAttribute="trailing" constant="10" id="jak-6k-49e"/>
-                            <constraint firstItem="a0D-b6-R6h" firstAttribute="height" secondItem="RnS-8i-YGE" secondAttribute="height" id="jkF-9t-Dkw"/>
+                            <constraint firstItem="a0D-b6-R6h" firstAttribute="centerY" secondItem="RnS-8i-YGE" secondAttribute="centerY" constant="-20" id="k16-Yc-kif"/>
+                            <constraint firstAttribute="trailing" secondItem="NOY-Wc-el6" secondAttribute="trailing" priority="751" constant="10" id="kAN-nd-SA7"/>
                             <constraint firstItem="PbP-Lg-JlJ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="13" id="nwT-2u-upS"/>
-                            <constraint firstItem="RnS-8i-YGE" firstAttribute="top" secondItem="NOY-Wc-el6" secondAttribute="bottom" constant="40" id="pYk-lA-fPU"/>
-                            <constraint firstItem="r23-OJ-1H4" firstAttribute="height" secondItem="RnS-8i-YGE" secondAttribute="height" id="qFc-Cq-W0l"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" relation="greaterThanOrEqual" secondItem="NOY-Wc-el6" secondAttribute="bottom" constant="10" id="pPk-SZ-b4P"/>
+                            <constraint firstItem="RnS-8i-YGE" firstAttribute="leading" secondItem="a0D-b6-R6h" secondAttribute="trailing" constant="10" id="w2k-4W-xNg"/>
                             <constraint firstAttribute="trailingMargin" secondItem="ONX-Lq-nbz" secondAttribute="trailing" constant="13" id="wcA-XY-aIc"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="Dn1-fP-g2q"/>
+                                <exclude reference="7DN-pt-8es"/>
+                            </mask>
+                        </variation>
                     </view>
                     <connections>
                         <outlet property="aboutButton" destination="PbP-Lg-JlJ" id="VXq-BF-LaK"/>
@@ -358,13 +369,25 @@
                     </navigationItem>
                     <connections>
                         <outlet property="breakDurationValueLabel" destination="GcY-Tb-u7w" id="gjq-RQ-dP7"/>
+                        <outlet property="breakTapGestrueRecongnizer" destination="gjo-QW-VUl" id="LH1-9I-FoY"/>
                         <outlet property="breakView" destination="ZDf-la-ecB" id="D6K-OJ-ifX"/>
                         <outlet property="pickerView" destination="gic-Nh-TRK" id="dRo-21-abz"/>
                         <outlet property="workDurationValueLabel" destination="eJr-1e-EmK" id="4dq-NG-Eup"/>
+                        <outlet property="workTapGestrueRecongnizer" destination="M4a-Gh-jQa" id="A4E-QI-5O4"/>
                         <outlet property="workView" destination="Uzv-fW-uSO" id="dsk-pt-t1a"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Pz8-l9-fQz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="M4a-Gh-jQa">
+                    <connections>
+                        <action selector="MoveMarker:" destination="RSC-aM-D4z" id="WpN-ON-hPe"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="gjo-QW-VUl">
+                    <connections>
+                        <action selector="MoveMarker:" destination="RSC-aM-D4z" id="0Eb-O6-TZE"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="2644" y="517"/>
         </scene>
