@@ -17,6 +17,7 @@
 		434C93551BDCAE5E00683AD5 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 434C93541BDCAE5E00683AD5 /* SettingViewController.swift */; };
 		434C935C1BDCB11300683AD5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 434C935B1BDCB11300683AD5 /* ViewController.swift */; };
 		4371E48C1BDBD1010026E81C /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4371E48B1BDBD1010026E81C /* AboutViewController.swift */; };
+		43DB2A7B1BDF0A6000858FAC /* TimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43DB2A7A1BDF0A6000858FAC /* TimerView.swift */; };
 		43DF32801BDA768B00A54A16 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 43DF327F1BDA768B00A54A16 /* .gitignore */; };
 /* End PBXBuildFile section */
 
@@ -54,6 +55,7 @@
 		434C93541BDCAE5E00683AD5 /* SettingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
 		434C935B1BDCB11300683AD5 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		4371E48B1BDBD1010026E81C /* AboutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
+		43DB2A7A1BDF0A6000858FAC /* TimerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimerView.swift; sourceTree = "<group>"; };
 		43DF327F1BDA768B00A54A16 /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -115,6 +117,7 @@
 				431B60151BD282E100F75ED9 /* Info.plist */,
 				434C93501BDC612F00683AD5 /* Theme.swift */,
 				434C93541BDCAE5E00683AD5 /* SettingViewController.swift */,
+				43DB2A7A1BDF0A6000858FAC /* TimerView.swift */,
 			);
 			path = Tudora;
 			sourceTree = "<group>";
@@ -271,6 +274,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				43DB2A7B1BDF0A6000858FAC /* TimerView.swift in Sources */,
 				434C935C1BDCB11300683AD5 /* ViewController.swift in Sources */,
 				434C93551BDCAE5E00683AD5 /* SettingViewController.swift in Sources */,
 				4371E48C1BDBD1010026E81C /* AboutViewController.swift in Sources */,

@@ -157,22 +157,11 @@
                                     <action selector="pressedWorkButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="MgJ-oT-Ixd"/>
                                 </connections>
                             </button>
-                            <view contentMode="scaleToFill" restorationIdentifier="timerView" translatesAutoresizingMaskIntoConstraints="NO" id="NOY-Wc-el6" userLabel="TimerView">
+                            <view contentMode="scaleToFill" restorationIdentifier="timerView" translatesAutoresizingMaskIntoConstraints="NO" id="NOY-Wc-el6" userLabel="TimerView" customClass="TimerView" customModule="Tudora" customModuleProvider="target">
                                 <rect key="frame" x="80" y="30" width="440" height="440"/>
-                                <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VYE-D2-4CW">
-                                        <rect key="frame" x="126" y="172" width="188.5" height="95.5"/>
-                                        <animations/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="80"/>
-                                        <color key="textColor" red="1" green="1" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                </subviews>
                                 <animations/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstItem="VYE-D2-4CW" firstAttribute="centerY" secondItem="NOY-Wc-el6" secondAttribute="centerY" id="Lcd-si-Hg0"/>
-                                    <constraint firstItem="VYE-D2-4CW" firstAttribute="centerX" secondItem="NOY-Wc-el6" secondAttribute="centerX" id="qGJ-gC-0Lg"/>
                                     <constraint firstAttribute="width" secondItem="NOY-Wc-el6" secondAttribute="height" multiplier="1:1" id="sTr-dL-b8n"/>
                                 </constraints>
                             </view>
