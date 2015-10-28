@@ -235,10 +235,10 @@
                     </view>
                     <connections>
                         <outlet property="aboutButton" destination="PbP-Lg-JlJ" id="VXq-BF-LaK"/>
+                        <outlet property="breakButton" destination="a0D-b6-R6h" id="Mdc-Zi-zpq"/>
+                        <outlet property="procrastinationButton" destination="RnS-8i-YGE" id="IWy-Er-R3K"/>
                         <outlet property="settingButton" destination="ONX-Lq-nbz" id="PLH-Ul-I55"/>
-                        <outletCollection property="timerButtons" destination="r23-OJ-1H4" collectionClass="NSMutableArray" id="TKi-di-R8g"/>
-                        <outletCollection property="timerButtons" destination="a0D-b6-R6h" collectionClass="NSMutableArray" id="GZm-Ph-naP"/>
-                        <outletCollection property="timerButtons" destination="RnS-8i-YGE" collectionClass="NSMutableArray" id="IiC-71-suS"/>
+                        <outlet property="workButton" destination="r23-OJ-1H4" id="jdh-RZ-Gwq"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
