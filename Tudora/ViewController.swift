@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import AudioToolbox
 
 class ViewController: UIViewController {
 
@@ -17,6 +18,9 @@ class ViewController: UIViewController {
     @IBOutlet weak var breakButton: UIButton!
     
     @IBOutlet weak var procrastinationButton: UIButton!
+    
+    @IBOutlet weak var timerView: TimerView!
+    
     private var currentType = TimerType.Idle
     private var timer: NSTimer?
     private var endDate: NSDate?
@@ -79,9 +83,12 @@ class ViewController: UIViewController {
         startTimerWithType(.Procrastination)
     }
     
-    func setDuration(duration: CGFloat, maxValue: CGFloat) {
-
+    private func setDuration(duration: CGFloat, maxValue: CGFloat) {
+        timerView.durationInseconds = duration
+        timerView.maxValue = maxValue
+        timerView.setNeedsDisplay()
     }
+    
     private func setUIModelForTimerType(timerType: TimerType) {
         UIView.animateWithDuration(0.3, delay: 0.0, usingSpringWithDamping: 0.8, initialSpringVelocity: 0.0, options: [], animations: { () -> Void in
             switch timerType {
@@ -146,11 +153,33 @@ class ViewController: UIViewController {
         timer = NSTimer.scheduledTimerWithTimeInterval(0.1, target: self, selector: "updateTimerLabel:", userInfo: ["timerType": seconds], repeats: true)
         
     }
-    private func updateTimerLabel(timer: NSTimer) {
+    private func updateTimerLabel(sender: NSTimer) {
         var totoalNumberOfSeconds: CGFloat
-        
+        if let type = (sender.userInfo as! NSDictionary)["timerType"] as? Int {
+            totoalNumberOfSeconds = CGFloat(type)
+        } else {
+            assert(false, "不会发生")
+            totoalNumberOfSeconds = -1.0
+        }
+        let timeInterval = CGFloat(endDate!.timeIntervalSinceNow)
+        if timeInterval < 0 {
+            resetTimer()
+            if timeInterval > -1 {
+                AudioServicesPlayAlertSound(kSystemSoundID_Vibrate)
+            }
+            setDuration(0, maxValue: 1)
+            return
+        }
+        setDuration(timeInterval, maxValue: totoalNumberOfSeconds)
     }
     private func resetTimer() {
+        timer?.invalidate()
+        timer = nil
+        currentType = .Idle
+        setUIModelForTimerType(currentType)
+        
+        NSUserDefaults.standardUserDefaults().removeObjectForKey("date")
+        NSUserDefaults.standardUserDefaults().synchronize()
         
     }
 }

@@ -10,12 +10,9 @@ import UIKit
 
 class TimerView: UIView {
 
-    /*
-    // Only override drawRect: if you perform custom drawing.
-    // An empty implementation adversely affects performance during animation.
-    override func drawRect(rect: CGRect) {
-        // Drawing code
-    }
-    */
+    var durationInseconds: CGFloat = 0.0
+    var maxValue: CGFloat = 60.0
+    var showRemaining = true
+    
 
 }

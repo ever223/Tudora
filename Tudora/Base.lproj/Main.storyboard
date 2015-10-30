@@ -238,6 +238,7 @@
                         <outlet property="breakButton" destination="a0D-b6-R6h" id="Mdc-Zi-zpq"/>
                         <outlet property="procrastinationButton" destination="RnS-8i-YGE" id="IWy-Er-R3K"/>
                         <outlet property="settingButton" destination="ONX-Lq-nbz" id="PLH-Ul-I55"/>
+                        <outlet property="timerView" destination="NOY-Wc-el6" id="FaB-Vs-YlI"/>
                         <outlet property="workButton" destination="r23-OJ-1H4" id="jdh-RZ-Gwq"/>
                     </connections>
                 </viewController>
