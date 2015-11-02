@@ -27,6 +27,8 @@ class ViewController: UIViewController {
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
         
+        //timerView = TimerView(frame: CGRectZero)
+        
         view.backgroundColor = Theme.backgroundColor
         
         aboutButton.layer.cornerRadius = aboutButton.bounds.size.width / 2
@@ -48,12 +50,16 @@ class ViewController: UIViewController {
         breakButton.layer.cornerRadius = breakButton.bounds.size.width / 2
         breakButton.layer.borderWidth = 1.0
         breakButton.layer.borderColor = Theme.buttonBorderColor.CGColor
-        
-        
-        
+        if timer == nil {
+            setDuration(0, maxValue: 1)
+        }
     }
     override func viewDidLoad() {
         super.viewDidLoad()
+    }
+    override func viewDidLayoutSubviews() {
+        let minSizeDimension = min(view.frame.size.width, view.frame.size.height)
+        timerView.timeLabel.font = timerView.timeLabel.font.fontWithSize((minSizeDimension-2*10)*0.9/3.0-10.0)
     }
     override func preferredStatusBarStyle() -> UIStatusBarStyle {
         return .LightContent
