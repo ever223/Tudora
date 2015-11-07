@@ -18,29 +18,27 @@ class TimerView: UIView {
     let secondShapeLayer = CAShapeLayer()
     var timeLabel = UILabel()
     override init(frame: CGRect) {
-        timeLabel = {
-            let label = UILabel()
-            label.translatesAutoresizingMaskIntoConstraints = false
-            label.font = UIFont(name: "HelveticaNeue-Thin", size: 80)
-            label.textAlignment = .Center
-            label.textColor = Theme.timerColor
-            return label
-        }()
         super.init(frame: frame)
-        backgroundColor = UIColor.clearColor()
-        layer.addSublayer(timerShapeLayer)
-        layer.addSublayer(secondShapeLayer)
-        addSubview(timeLabel)
+    }
+
+    required init?(coder aDecoder: NSCoder) {
         
+        super.init(coder: aDecoder)
+        timeLabel.translatesAutoresizingMaskIntoConstraints = false
+        timeLabel.font = UIFont(name: "HelveticaNeue-Thin", size: 80)
+        timeLabel.textAlignment = .Center
+        timeLabel.textColor = UIColor.redColor()
+
+        self.backgroundColor = UIColor.clearColor()
+        self.addSubview(timeLabel)
+        self.layer.addSublayer(timerShapeLayer)
+        self.layer.addSublayer(secondShapeLayer)
         var constraints = [NSLayoutConstraint]()
         constraints.append(timeLabel.centerXAnchor.constraintEqualToAnchor(centerXAnchor))
         constraints.append(timeLabel.centerYAnchor.constraintEqualToAnchor(centerYAnchor))
         NSLayoutConstraint.activateConstraints(constraints)
     }
     
-    required init?(coder aDecoder: NSCoder) {
-        super.init(coder: aDecoder)
-    }
     
     override func drawRect(rect: CGRect) {
         var percentage: CGFloat
@@ -67,6 +65,7 @@ class TimerView: UIView {
         let dashLength = 2 * radius * CGFloat(M_PI) / totalMinutes
         timerShapeLayer.lineDashPattern = [dashLength - 2, 2]
         
+        
         var secondsPercentage: CGFloat
         if showRemaining {
             secondsPercentage = (durationInseconds - 1) % 60.0
@@ -90,9 +89,10 @@ class TimerView: UIView {
         }
         let seconds = Int(durationInseconds % 60)
         let minutes = Int(durationInseconds / 60.0)
-        let labelText = NSString(format: "%02d:%02d", minutes, seconds)
-        timeLabel.text = labelText as String
-        timeLabel.setNeedsDisplay()
+        let labelText = NSString(format: "%02d:%02d", minutes, seconds) as String
+        
+        timeLabel.text = labelText
+        timeLabel.setNeedsLayout()
     }
     override func touchesEnded(touches: Set<UITouch>, withEvent event: UIEvent?) {
         showRemaining = !showRemaining

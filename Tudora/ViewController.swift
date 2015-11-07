@@ -64,6 +64,8 @@ class ViewController: UIViewController {
     override func preferredStatusBarStyle() -> UIStatusBarStyle {
         return .LightContent
     }
+    
+    // MARK: - IBAction
     @IBAction func pressedWorkButton(sender: UIButton) {
         guard currentType != .Work
             else {
@@ -94,6 +96,7 @@ class ViewController: UIViewController {
         timerView.maxValue = maxValue
         timerView.setNeedsDisplay()
     }
+    
     
     private func setUIModelForTimerType(timerType: TimerType) {
         UIView.animateWithDuration(0.3, delay: 0.0, usingSpringWithDamping: 0.8, initialSpringVelocity: 0.0, options: [], animations: { () -> Void in
@@ -127,8 +130,11 @@ class ViewController: UIViewController {
         }
     }
     private func startTimerWithType(timerType: TimerType) {
+        
         setDuration(0, maxValue: 1)
+        
         var typeName: String
+        
         switch timerType {
         case .Work:
             currentType = .Work
@@ -147,6 +153,9 @@ class ViewController: UIViewController {
         setUIModelForTimerType(currentType)
         
         let seconds = NSUserDefaults.standardUserDefaults().integerForKey(timerType.rawValue)
+        
+        print("Seconds = \(seconds)")
+        
         endDate = NSDate(timeIntervalSinceNow: NSTimeInterval(seconds))
         let endTimestamp = floor(endDate!.timeIntervalSince1970)
         
@@ -159,7 +168,9 @@ class ViewController: UIViewController {
         timer = NSTimer.scheduledTimerWithTimeInterval(0.1, target: self, selector: "updateTimerLabel:", userInfo: ["timerType": seconds], repeats: true)
         
     }
-    private func updateTimerLabel(sender: NSTimer) {
+    
+
+    func updateTimerLabel(sender: NSTimer) {
         var totoalNumberOfSeconds: CGFloat
         if let type = (sender.userInfo as! NSDictionary)["timerType"] as? Int {
             totoalNumberOfSeconds = CGFloat(type)
